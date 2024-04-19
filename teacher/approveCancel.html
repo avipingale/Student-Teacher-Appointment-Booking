@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>Approve/Cancel Appointment</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("../header.html");
+            $("#footer").load("../footer.html");
+
+        });
+    </script>
+    <div id="header"></div>
+    <div class="approve-form">
+        <div id="approve-registration">
+            <h2>Approve/Cancel Appointment</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sakura Tengen</td>
+                        <td>26/05/2023</td>
+                        <td>16:00</td>
+                        <td>
+                            <button class="approve-btn">Approve</button>
+                            <button class="reject-btn">Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Isabelle Throne</td>
+                        <td>27/05/2023</td>
+                        <td>14:00</td>
+                        <td>
+                            <button class="approve-btn">Approve</button>
+                            <button class="reject-btn">Cancel</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

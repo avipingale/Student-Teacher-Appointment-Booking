@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>View Appointments</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("../header.html");
+            $("#footer").load("../footer.html");
+
+        });
+    </script>
+    <div id="header"></div>
+    <div class="view-messages">
+        <div class="messages">
+            <h2>View Appointments</h2>
+            <ul>
+                <li>
+                    <div class="message-info">
+                        <h3>Sakura Tengen</h3>
+                        <p>26/05/2023</p>
+                        <p>16:00</p>
+                    </div>
+                    <div class="message-content">
+                        <p>12th Grade trigonometry QnA session</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="message-info">
+                        <h3>Isabelle Throne</h3>
+                        <p>27/05/2023</p>
+                        <p>14:00</p>
+                    </div>
+                    <div class="message-content">
+                        <p>10th Grade Math exam prep</p>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="message-info">
+                        <h3>Halo Shinzi</h3>
+                        <p>27/05/2023</p>
+                        <p>17:00</p>
+                    </div>
+                    <div class="message-content">
+                        <p>11th Grade Homework review session</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

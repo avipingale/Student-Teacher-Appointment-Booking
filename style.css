@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Poppins:wght@200&display=swap");
+
+/* Styles for the entire page */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+  background-color:black;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo a {
+  color:#fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav .logo a:hover {
+  text-decoration: underline;
+}
+  
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+  
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .form-box {
+    margin-right: 15px;
+    background-color:bisque;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  .button-box {
+  width: 600px;
+  text-align: center;
+  position: relative;
+  border-radius: 30px;
+  }
+  
+  .toggle-btn {
+    margin-bottom: 10px;
+    background-color:black;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background-color:black;
+    color:#ef629f ;
+  }
+  
+  .toggle-btn.active {
+    background-color:black;
+    color:#ef629f;
+  }
+  
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .check-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color:black;
+    color: #ef629f;
+  }
+/*Admin page*/
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+.admin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button1{
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #666;
+}
+.btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btn1 a {
+  color:black;
+  text-decoration: none;
+}
+
+.addform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+#add-teacher-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-teacher-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#add-teacher-form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-teacher-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color:black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#add-teacher-form button[type="submit"]:hover {
+  background-color:#eecda3;
+  color: #000;
+}
+
+
+#add-teacher h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+
+.teacher-list {
+  background-color:#fff;
+  width: 80vh;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+
+.teacher-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.teacher-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.teacher-list li:last-child {
+  border-bottom: none;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 10px;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.approve-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+#approve-registration {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#approve-registration h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20x;
+}
+
+#approve-registration table {
+  background-color:#eecda3;
+  margin-top: 100px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#approve-registration th, td {
+  text-align: left;
+  padding: 15px;
+}
+
+#approve-registration th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+#approve-registration tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.approve-btn, .reject-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.reject-btn {
+  background-color: #f44336;
+}
+/*Student Page*/
+.registerform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+#add-student-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#add-student-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#add-student-form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#add-student-form input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#add-student-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-student-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color:black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#add-student-form button[type="submit"]:hover {
+  background-color:#eecda3;
+  color: #000;
+}
+
+
+#add-student h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.teacherSearchform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+#search-teacher-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#search-teacher-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#search-teacher-form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-teacher-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color:black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#search-teacher-form button[type="submit"]:hover {
+  background-color:#eecda3;
+  color: #000;
+}
+
+
+#search-teacher h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.appointmentform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+#book-appointment-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#book-appointment-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#book-appointment-form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#book-appointment-form input[type="date"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#book-appointment-form input[type="time"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#book-appointment-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color:black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#book-appointment-form button[type="submit"]:hover {
+  background-color:#eecda3;
+  color: #000;
+}
+
+#book-appointment h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sendMessageform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+#send-message-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#send-message-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#send-message-form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#send-message-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#send-message-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color:black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#send-message-form button[type="submit"]:hover {
+  background-color:#eecda3;
+  color: #000;
+}
+
+
+#send-message h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*Teacher page*/
+.teacher{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+.button3{
+  border: none;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button3:hover {
+  background-color: #666;
+}
+.btn3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btn3 a {
+  color:black;
+  text-decoration: none;
+}
+.view-messages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+.messages {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.messages h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.messages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.messages li {
+  border: 1px solid black;
+  background-color:#ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.messages .message-info {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.messages .message-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.messages .message-content {
+  margin-top: 10px;
+}
+
+/*Footer*/
+footer {
+  background-color:#333;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo a {
+  color:white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links ul {
+  color: #fff;
+  display: flex;
+}
+
+.footer-links li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.footer-links li a {
+  color:#ef629f;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-info p {
+  color:#eecda3;
+  margin: 10px 0;
+  font-size: 16px;
+}
+/*Login*/
+.Loginform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to left, #eecda3, #ef629f);
+}
+
+#login-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#login-form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#login-form input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#login-form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#login-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color:black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#login-form button[type="submit"]:hover {
+  background-color:#eecda3;
+  color: #000;
+}
+
+#login h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}

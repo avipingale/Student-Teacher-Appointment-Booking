@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>Student Register</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("../header.html");
+            $("#footer").load("../footer.html");
+
+        });
+    </script>
+    <div id="header"></div>
+    <div class="registerform">
+        <div id="add-student">
+            <h2>Student Register</h2>
+            <form id="add-student-form">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" name="student-name" required><br>
+
+                <label for="student-email">Email:</label>
+                <input type="email" id="student-email" name="student-email" required><br>
+
+                <label for="student-password">Password:</label>
+                <input type="password" id="student-password" name="student-password" required><br>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

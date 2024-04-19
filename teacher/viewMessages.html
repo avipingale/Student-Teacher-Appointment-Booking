@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>View Messages from Students</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#header").load("../header.html");
+            $("#footer").load("../footer.html");
+
+        });
+    </script>
+    <div id="header"></div>
+    <div class="view-messages">
+        <div class="messages">
+            <h2>Messages from Students</h2>
+            <ul>
+                <li>
+                    <div class="message-info">
+                        <h3>Jimmy Kim</h3>
+                        <p>Subject: Math homework</p>
+                        <p>Sent: 24-05-2023 13:00</p>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi, can you help me with the math homework? I am having some difficulties.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="message-info">
+                        <h3>June Dane</h3>
+                        <p>Subject: Exam preparation</p>
+                        <p>Sent:25-05-2023 15:45</p>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi, I have an upcoming exam and I was wondering if you could provide some tips for studying.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
